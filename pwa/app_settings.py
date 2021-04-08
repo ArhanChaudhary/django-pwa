@@ -65,43 +65,53 @@ PWA_APP_ICONS = getattr(settings, 'PWA_APP_ICONS', [
 PWA_APP_SPLASH_SCREEN = getattr(settings, 'PWA_APP_SPLASH_SCREEN', [
     {
         'src': '/static/images/icons/splash-640x1136.png',
-        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "640x1136"
     },
     {
         'src': '/static/images/icons/splash-750x1334.png',
-        'media': '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "750x1334"
     },
     {
         'src': '/static/images/icons/splash-1242x2208.png',
-        'media': '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)'
+        'media': '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)',
+        "sizes": "1242x2208"
     },
     {
         'src': '/static/images/icons/splash-1125x2436.png',
-        'media': '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)'
+        'media': '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)',
+        "sizes": "1125x2436"
     },
     {
         'src': '/static/images/icons/splash-828x1792.png',
-        'media': '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "828x1792"
     },
     {
         'src': '/static/images/icons/splash-1242x2688.png',
-        'media': '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)'
+        'media': '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)',
+        "sizes": "1242x2688"
     },
     {
         'src': '/static/images/icons/splash-1536x2048.png',
-        'media': '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "1536x2048"
     },
     {
         'src': '/static/images/icons/splash-1668x2224.png',
-        'media': '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "1668x2224"
     },
     {
         'src': '/static/images/icons/splash-1668x2388.png',
-        'media': '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "1668x2388"
     },
     {
         'src': '/static/images/icons/splash-2048x2732.png',
-        'media': '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'
+        'media': '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)',
+        "sizes": "2048x2732"
     }
 
 ])
