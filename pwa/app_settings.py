@@ -31,35 +31,43 @@ PWA_APP_STATUS_BAR_COLOR = getattr(settings, 'PWA_APP_STATUS_BAR_COLOR', 'defaul
 PWA_APP_ICONS = getattr(settings, 'PWA_APP_ICONS', [
     {
         'src': '/static/images/icons/icon-72x72.png',
-        'sizes': '72x72'
+        'sizes': '72x72',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-96x96.png',
-        'sizes': '96x96'
+        'sizes': '96x96',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-128x128.png',
-        'sizes': '128x128'
+        'sizes': '128x128',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-144x144.png',
-        'sizes': '144x144'
+        'sizes': '144x144',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-152x152.png',
-        'sizes': '152x152'
+        'sizes': '152x152',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-192x192.png',
-        'sizes': '192x192'
+        'sizes': '192x192',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-384x384.png',
-        'sizes': '384x384'
+        'sizes': '384x384',
+        'purpose': 'any maskable',
     },
     {
         'src': '/static/images/icons/icon-512x512.png',
-        'sizes': '512x512'
+        'sizes': '512x512',
+        'purpose': 'any maskable',
     }
 ])
 PWA_APP_SPLASH_SCREEN = getattr(settings, 'PWA_APP_SPLASH_SCREEN', [
