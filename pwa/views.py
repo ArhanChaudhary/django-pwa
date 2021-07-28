@@ -15,7 +15,3 @@ def manifest(request):
         for setting_name in dir(app_settings)
         if setting_name.startswith('PWA_')
     }, content_type='application/json')
-
-
-def offline(request):
-    return render(request, "offline.html")
