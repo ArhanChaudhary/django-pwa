@@ -35,7 +35,7 @@ DATABASES = {
     }
 }
 
-STATIC_URL = '/static/'
+STATIC_URL = 'https://storage.googleapis.com/twstatic/'
 
 SILENCED_SYSTEM_CHECKS = [
     'admin.E408',

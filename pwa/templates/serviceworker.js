@@ -2,24 +2,24 @@
 
 var staticCacheName = "django-pwa-v" + new Date().getTime();
 var filesToCache = [
-    '/static/images/icons/icon-72x72.png',
-    '/static/images/icons/icon-96x96.png',
-    '/static/images/icons/icon-128x128.png',
-    '/static/images/icons/icon-144x144.png',
-    '/static/images/icons/icon-152x152.png',
-    '/static/images/icons/icon-192x192.png',
-    '/static/images/icons/icon-384x384.png',
-    '/static/images/icons/icon-512x512.png',
-    '/static/images/icons/splash-640x1136.png',
-    '/static/images/icons/splash-750x1334.png',
-    '/static/images/icons/splash-1242x2208.png',
-    '/static/images/icons/splash-1125x2436.png',
-    '/static/images/icons/splash-828x1792.png',
-    '/static/images/icons/splash-1242x2688.png',
-    '/static/images/icons/splash-1536x2048.png',
-    '/static/images/icons/splash-1668x2224.png',
-    '/static/images/icons/splash-1668x2388.png',
-    '/static/images/icons/splash-2048x2732.png'
+    'https://storage.googleapis.com/twstatic/images/icons/icon-72x72.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-96x96.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-128x128.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-144x144.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-152x152.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-192x192.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-384x384.png',
+    'https://storage.googleapis.com/twstatic/images/icons/icon-512x512.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-640x1136.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-750x1334.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1242x2208.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1125x2436.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-828x1792.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1242x2688.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1536x2048.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1668x2224.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-1668x2388.png',
+    'https://storage.googleapis.com/twstatic/images/icons/splash-2048x2732.png'
 ];
 
 // Cache on install
