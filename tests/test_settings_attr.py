@@ -6,7 +6,6 @@ class AppSettingsTest(TestCase):
     def test_has_defined(self):
         """Must have the attributes defined in app_settings.py"""
         attributes = [
-            'PWA_SERVICE_WORKER_PATH',
             'PWA_APP_NAME',
             'PWA_APP_DESCRIPTION',
             'PWA_APP_ROOT_URL',
