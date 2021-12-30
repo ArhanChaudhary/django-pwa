@@ -1,7 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from urllib.request import urlopen
 
 from . import app_settings
+
+def service_worker(request):
+    return HttpResponse(urlopen(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
 
 def manifest(request):
     return render(request, 'manifest.json', {
