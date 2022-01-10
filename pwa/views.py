@@ -1,14 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from urllib.request import urlopen
+from django.conf import settings
 
 from . import app_settings
 
 def service_worker(request):
-    try:
-        return HttpResponse(urlopen(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
-    except:
+    if settings.DEBUG:
         return HttpResponse(open(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
+    else:
+        return HttpResponse(urlopen(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
 
 def manifest(request):
     return render(request, 'manifest.json', {
