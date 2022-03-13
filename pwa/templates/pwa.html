@@ -13,18 +13,18 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="{{ PWA_APP_NAME }}">
 <meta name="apple-mobile-web-app-status-bar-style" content="{{ PWA_APP_STATUS_BAR_COLOR }}">
-<link rel="apple-touch-icon" sizes="180x180" crossorigin="anonymous" href="/apple-touch-icon.png">
-<link rel="icon noreferrer" type="image/png" sizes="32x32" crossorigin="anonymous" href="/favicon-32x32.png">
-<link rel="icon noreferrer" type="image/png" sizes="16x16" crossorigin="anonymous" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="mask-icon noreferrer" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 {% for splash in PWA_APP_SPLASH_SCREEN %}
-<link href="{{ splash.src }}" media="{{ splash.media }}" rel="apple-touch-startup-image noreferrer" crossorigin="anonymous"/>
+<link href="{{ splash.src }}" media="{{ splash.media }}" rel="apple-touch-startup-image" />
 {% endfor %}
 <!-- Tile for Win8 -->
 <meta name="msapplication-TileColor" content="{{ PWA_APP_BACKGROUND_COLOR }}">
 {% with PWA_APP_ICONS|last as icon %}
 <meta name="msapplication-TileImage" content="{{ icon.src }}">
-<link rel="icon noreferrer" crossorigin="anonymous" sizes="{{ icon.sizes }}" href="{{ icon.src }}">
+<link rel="icon" sizes="{{ icon.sizes }}" href="{{ icon.src }}">
 {% endwith %}
 <meta name="theme-color" content="#ffffff">
