@@ -5,11 +5,13 @@ from django.conf import settings
 
 from . import app_settings
 
+if settings.DEBUG:
+    html = open(app_settings.PWA_SERVICE_WORKER_PATH).read()
+else:
+    html = urlopen(app_settings.PWA_SERVICE_WORKER_PATH).read()
+
 def service_worker(request):
-    if settings.DEBUG:
-        return HttpResponse(open(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
-    else:
-        return HttpResponse(urlopen(app_settings.PWA_SERVICE_WORKER_PATH).read(), content_type='application/javascript')
+    return HttpResponse(html, content_type='application/javascript')
 
 def manifest(request):
     return render(request, 'manifest.json', {
