@@ -10,7 +10,10 @@
 <meta name="theme-color" content="{{ PWA_APP_THEME_COLOR }}">
 
 <!-- Add to homescreen for Safari on iOS -->
+{% comment %}
+Don't add this: https://web.dev/learn/pwa/enhancements/#installation-reliability
 <meta name="apple-mobile-web-app-capable" content="yes">
+{% endcomment %}
 <meta name="apple-mobile-web-app-title" content="{{ PWA_APP_NAME }}">
 <meta name="apple-mobile-web-app-status-bar-style" content="{{ PWA_APP_STATUS_BAR_COLOR }}">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
